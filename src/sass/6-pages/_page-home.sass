@@ -1,0 +1,116 @@
+// -------------------------------------------------
+//---------------------HEADER-----------------------
+//--------------------------------------------------
+.header
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    +respond(tab-port)
+        flex-direction: column
+    &__image
+        width: 50%
+        img
+            width: 100%
+            justify-self: flex-end
+    &__text
+        width: 50%
+        justify-self: flex-start
+        +respond(tab-port)
+            text-align: center
+        &-1
+            +respond(tab-port)
+                margin-top: $margin-medium
+        &-2
+            padding-left: $margin-small
+            border-left: 2px solid $primary
+            +respond(tab-port)
+                padding-left: 0px
+                border-left: none
+        &-3
+            +respond(tab-port)
+                text-align: center
+            ul
+                display: flex
+                justify-content: space-between
+                width: 60% 
+                +respond(tab-port)
+                    width: 100%
+
+
+// -------------------------------------------------
+//---------------------WHY ME-----------------------
+//--------------------------------------------------
+.why-me
+    h4
+        text-align: center
+        margin: 0 auto
+    &__container
+        display: flex
+        justify-content: space-between 
+        +respond(tab-port)
+            flex-direction: column
+            text-align: center  
+    &__box
+        +respond(tab-port)
+            margin-top: $margin-large 
+        h5
+            margin-top: $margin-small
+        p
+            margin-top: $margin-small
+        
+// -------------------------------------------------
+//------------LATEST PROJECTS-----------------------
+//--------------------------------------------------
+.latest-projects
+    display: flex
+    position: relative
+    +respond(tab-land)
+        flex-direction: column
+    &__text
+        width: 50%
+        padding-right: 2rem
+        +respond(tab-land)
+            width: 100%
+            padding-left: 5rem
+    &__img
+        position: absolute
+        right: 0
+        top: 0%
+        width: 40%
+        overflow: hidden
+        +respond(tab-land)
+            position: relative
+            width: 100%
+            margin-top: $margin-medium
+        img
+            width: 100%
+            height: auto
+            
+
+// -------------------------------------------------
+//-------------------MY STORY-----------------------
+//--------------------------------------------------
+
+.small-story
+    display: flex
+    flex-direction: row-reverse
+    &__text
+        padding-left: 2rem
+        width: 50%
+        +respond(big-desktop)
+            width: 40%
+        +respond(tab-land)
+            width: 100%
+            padding-left: 5rem
+            padding-right: 5rem
+    &__image
+        width: 40%
+        position: absolute
+        left: 0
+        +respond(big-desktop)
+            width: 55%
+        +respond(tab-land)
+            display: none
+        img
+            width: 100%
+

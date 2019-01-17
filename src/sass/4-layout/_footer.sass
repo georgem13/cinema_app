@@ -1,0 +1,26 @@
+.footer
+    margin-top: $margin-xlarge
+    text-align: center
+    h4
+        +respond(tab-land)
+            width: 80%
+    p
+        width: 50%
+        margin: $margin-medium auto
+        +respond(tab-land)
+            width: 80%
+
+
+    &__social ul
+        justify-content: center
+        li
+            margin: 0 4rem
+            +respond(tab-land)
+                margin: 0 2rem
+        
+        
+    &__link
+        text-align: center
+        margin: 6rem auto 2rem
+        a
+            font-weight: 100
